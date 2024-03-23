@@ -9,9 +9,11 @@ const emailFunc = () => {
     const emailValue = emailInput.value.trim();
 
     if (
-      (emailValue.length > 0 && emailValue.length < 4) ||
-      !emailValue.includes('@')
+      emailValue === '' ||
+      (!emailValue.includes('@') && emailValue.length < 0)
     ) {
+      emailErrorContent.textContent = ''; // Clear error message if email value is empty or invalid
+    } else if (!emailValue.includes('@')) {
       emailErrorContent.textContent = 'Please Enter A Valid Email Address!';
     } else {
       emailErrorContent.textContent = '';

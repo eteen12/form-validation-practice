@@ -4,3 +4,33 @@
 .email-error-text{
     color: black;
 }
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border:none;
+    border-bottom:2px solid black;
+}
+.name-wrapper,.email-wrapper,.password-wrapper,.confirm-wrapper,.button-wrapper{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom:10px;
+}
+form{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:1px solid black;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
