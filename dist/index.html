@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./main.js"></script>
 </head>
 <body>
-    
+
+    <div class="header">
+        <div class="logo"></div>
+        <div class="header-text"></div>
+    </div>
+
+    <form action="/" method="get" id="form-wrapper">
+        <div class="name-wrapper">
+            <label for="name">NAME</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="name-error"></div>
+
+        <div class="email-wrapper">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" for="email">
+        </div>
+        <div class="email-error"></div>
+
+        <div class="password-wrapper">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" if="password">
+        </div>
+        <div class="password-error"></div>
+
+        <div class="passwordC-wrapper">
+            <label for="passwordC">PASSWORD</label>
+            <input type="password" name="passwordC" if="passwordC">
+        </div>
+        <div class="passwordC-error"></div>
+
+        <div class="button-wrapper">
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
 </body>
 </html>
