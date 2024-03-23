@@ -8,13 +8,15 @@ const emailFunc = () => {
   emailInput.addEventListener('input', () => {
     const emailValue = emailInput.value.trim();
 
-    if (emailValue.length > 0 && emailValue.length < 4) {
-      emailErrorContent.textContent = 'Please Enter 5 or More Letters!';
+    if (
+      (emailValue.length > 0 && emailValue.length < 4) ||
+      !emailValue.includes('@')
+    ) {
+      emailErrorContent.textContent = 'Please Enter A Valid Email Address!';
     } else {
       emailErrorContent.textContent = '';
     }
   });
-  
 };
 document.addEventListener('DOMContentLoaded', () => {
   emailFunc();
