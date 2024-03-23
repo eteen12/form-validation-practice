@@ -1,0 +1,1 @@
+This is a project I made, to help me start learning about live form validation. There is much room for improvement on every aspect, but this is something I will dive deeper into later on in my journey.
